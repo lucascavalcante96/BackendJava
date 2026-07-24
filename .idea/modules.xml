@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Aulas/Aulas.iml" filepath="$PROJECT_DIR$/Aulas/Aulas.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/BackendJava.iml" filepath="$PROJECT_DIR$/.idea/BackendJava.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Exercicios/Exercicios.iml" filepath="$PROJECT_DIR$/Exercicios/Exercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-backend-studies/api-springboot/api-springboot.iml" filepath="$PROJECT_DIR$/java-backend-studies/api-springboot/api-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-backend-studies/collections/collections.iml" filepath="$PROJECT_DIR$/java-backend-studies/collections/collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-backend-studies/01-fundamentos/fundamentos.iml" filepath="$PROJECT_DIR$/java-backend-studies/01-fundamentos/fundamentos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-backend-studies/java-backend-studies.iml" filepath="$PROJECT_DIR$/java-backend-studies/java-backend-studies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-backend-studies/poo/poo.iml" filepath="$PROJECT_DIR$/java-backend-studies/poo/poo.iml" />
     </modules>
   </component>
 </project>
