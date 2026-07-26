@@ -20,10 +20,10 @@ public class ex05 {
             System.out.println("O maior numero foi: " + numero1);
         }
         else if (numero2 > numero1 && numero2 > numero3) {
-            System.out.println("O menor numero foi: " + numero2);
+            System.out.println("O maior numero foi: " + numero2);
         }
         else{
-            System.out.println("O menor numero foi: " + numero3);
+            System.out.println("O maior numero foi: " + numero3);
         }
     }
 }
