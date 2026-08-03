@@ -13,6 +13,6 @@ public class EstruturaRepetitivaFor {
             int numero = sc.nextInt();
             soma += numero;
         }
-        System.out.println("O maior numero foi: " + soma);
+        System.out.println("A soma foi: " + soma);
     }
 }
