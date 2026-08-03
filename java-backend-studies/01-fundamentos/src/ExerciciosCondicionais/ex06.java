@@ -25,7 +25,15 @@ public class ex06 {
             maior = num3;
         }
 
+        if (num1 < num2 && num1 < num3) {
+            menor = num1;
+        } else if (num2 < num3) {
+            menor = num2;
+        } else {
+            menor = num3;
+        }
         System.out.println("O maior numero foi: " + maior);
+        System.out.println("O menor numero foi: " + menor);
         sc.close();
     }
 }
