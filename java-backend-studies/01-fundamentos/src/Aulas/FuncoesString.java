@@ -40,5 +40,15 @@ public class FuncoesString {
         System.out.println("- String original: " + original + " -");
         System.out.println("- indice: " + s07 + " -");
         System.out.println();
+
+        String frutas = "Laranja banana limão morango pessego";
+
+        String[] vector = frutas.split(" ");
+        System.out.println("- String original: " + frutas + " -");
+        System.out.println("- vector: " + vector[0] + " -");
+        System.out.println("- vector: " + vector[1] + " -");
+        System.out.println("- vector: " + vector[2] + " -");
+        System.out.println("- vector: " + vector[3] + " -");
+        System.out.println("- vector: " + vector[4] + " -");
     }
 }
