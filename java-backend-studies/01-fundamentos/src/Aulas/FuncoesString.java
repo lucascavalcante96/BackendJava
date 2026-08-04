@@ -10,5 +10,9 @@ public class FuncoesString {
         System.out.println("- String original: " + original + " -");
         System.out.println("- toLowercase: " + s01 + " -");
 
+        String s02 = original.toUpperCase();
+        System.out.println("- String original: " + original + " -");
+        System.out.println("- toUppercase: " + s02 + " -");
+
     }
 }
