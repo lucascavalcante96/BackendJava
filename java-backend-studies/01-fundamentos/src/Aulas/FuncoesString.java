@@ -24,6 +24,11 @@ public class FuncoesString {
         String s04 = original.substring(0,16);
         System.out.println("- String original: " + original + " -");
         System.out.println("- criando substring: " + s04 + " -");
+        System.out.println();
 
+        String s05 = original.replace("estudante", "profissional");
+        System.out.println("- String original: " + original + " -");
+        System.out.println("- Substituindo palavra: " + s05 + " -");
+        System.out.println();
     }
 }
