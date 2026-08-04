@@ -30,5 +30,15 @@ public class FuncoesString {
         System.out.println("- String original: " + original + " -");
         System.out.println("- Substituindo palavra: " + s05 + " -");
         System.out.println();
+
+        int s06 = original.indexOf("Cavalcante");
+        System.out.println("- String original: " + original + " -");
+        System.out.println("- indice: " + s06 + " -");
+        System.out.println();
+
+        int s07 = original.lastIndexOf("estudante");
+        System.out.println("- String original: " + original + " -");
+        System.out.println("- indice: " + s07 + " -");
+        System.out.println();
     }
 }
