@@ -21,5 +21,9 @@ public class FuncoesString {
         System.out.println("- removendo espaços em branco no final: " + s03 + " -");
         System.out.println();
 
+        String s04 = original.substring(0,16);
+        System.out.println("- String original: " + original + " -");
+        System.out.println("- criando substring: " + s04 + " -");
+
     }
 }
