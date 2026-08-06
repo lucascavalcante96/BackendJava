@@ -10,7 +10,16 @@ public class ex001 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        String nome = "Lucas Cavalcante";
-        System.out.println(nome.split(" "));
+        System.out.println("Digite uma nota entre 0 e 10");
+        int nota = sc.nextInt();
+        while (true){
+            if (nota >= 0 && nota <= 10){
+                System.out.println("A nota foi: " + nota);
+                break;
+            } else {
+                System.out.println("Nota invalida digite novamente: ");
+                nota = sc.nextInt();
+            }
+        }
     }
 }
