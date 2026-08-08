@@ -23,6 +23,7 @@ public class Salario {
         employee.increaseSalary(sc.nextDouble());
         System.out.printf("Updated data: %s, $%.2f %n", employee.name, employee.netSalary());
 
+
         sc.close();
     }
 }
