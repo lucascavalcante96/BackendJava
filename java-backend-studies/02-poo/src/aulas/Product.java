@@ -5,10 +5,17 @@ public class Product {
     public double preco;
     public int quantidade;
 
+    public Product() {
+        //construtor padrão
+    }
     public Product(String nome, double preco, int quantidade) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
+    }
+    public Product(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
     }
     public double valorDoEstoque(){
         return preco*quantidade;
