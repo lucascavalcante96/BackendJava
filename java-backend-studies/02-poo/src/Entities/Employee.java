@@ -1,9 +1,17 @@
 package Entities;
 
 public class Employee {
-    public String name;
+    private String name;
     public double grossSalary;
     public double tax;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public double netSalary(){
         return grossSalary - tax;
