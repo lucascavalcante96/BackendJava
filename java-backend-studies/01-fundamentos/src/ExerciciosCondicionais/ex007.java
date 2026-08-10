@@ -13,30 +13,42 @@ public class ex007 {
         System.out.println("Digite um número de 1 a 7: ");
 
         int opcao = sc.nextInt();
-        if (opcao == 1) {
-            System.out.println("Esse número equivale a Domingo");
+        while (true) {
+            if (opcao == 1) {
+                System.out.println("Esse número equivale a Domingo");
+                break;
+            }
+            else if (opcao == 2) {
+                System.out.println("Esse número equivale a Segunda-feira");
+                break;
+            }
+            else if (opcao == 3) {
+                System.out.println("Esse número equivale a Terça-feira");
+                break;
+            }
+            else if (opcao == 4) {
+                System.out.println("Esse número equivale a Quarta-feira");
+                break;
+            }
+            else if (opcao == 5) {
+                System.out.println("Esse número equivale a Quinta-feira");
+                break;
+            }
+            else if (opcao == 6) {
+                System.out.println("Esse número equivale a Sexta-feira");
+                break;
+            }
+            else if (opcao == 7) {
+                System.out.println("Esse número equivale a Sábado");
+                break;
+            }
+            else {
+                System.out.println("Opção invalida");
+                System.out.println("Digite novamente: ");
+                opcao = sc.nextInt();
+            }
         }
-        else if (opcao == 2) {
-            System.out.println("Esse número equivale a Segunda-feira");
-        }
-        else if (opcao == 3) {
-            System.out.println("Esse número equivale a Terça-feira");
-        }
-        else if (opcao == 4) {
-            System.out.println("Esse número equivale a Quarta-feira");
-        }
-        else if (opcao == 5) {
-            System.out.println("Esse número equivale a Quinta-feira");
-        }
-        else if (opcao == 6) {
-            System.out.println("Esse número equivale a Sexta-feira");
-        }
-        else if (opcao == 7) {
-            System.out.println("Esse número equivale a Sábado");
-        }
-        else {
-            System.out.println("Opção invalida");
-        }
+
         sc.close();
     }
 }
