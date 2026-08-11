@@ -15,7 +15,8 @@ public class Salario {
         String name = sc.nextLine();
         employee.setName(name);
         System.out.print("Gross salary: ");
-        employee.grossSalary = sc.nextDouble();
+        double salary = sc.nextDouble();
+        employee.setGrossSalary(salary);
         System.out.print("Tax: ");
         employee.tax = sc.nextDouble();
 
