@@ -18,7 +18,8 @@ public class Salario {
         double salary = sc.nextDouble();
         employee.setGrossSalary(salary);
         System.out.print("Tax: ");
-        employee.tax = sc.nextDouble();
+        double tax = sc.nextDouble();
+        employee.setTax(tax);
 
         System.out.printf("Employee: %s, $ %.2f%n", employee.getName(), employee.netSalary());
         System.out.println("Which percentage to increase salary? ");

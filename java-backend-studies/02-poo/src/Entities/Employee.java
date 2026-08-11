@@ -3,7 +3,15 @@ package Entities;
 public class Employee {
     private String name;
     private double grossSalary;
-    public double tax;
+    private double tax;
+
+    public double getTax() {
+        return tax;
+    }
+
+    public void setTax(double tax) {
+        this.tax = tax;
+    }
 
     public String getName() {
         return name;
