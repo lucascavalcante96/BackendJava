@@ -1,21 +1,21 @@
 package exerciciosPoo;
 
 public class Account {
-    private int acountNumber;
+    private int accountNumber;
     private String name;
     private double value;
 
     public Account() {
     }
 
-    public Account(String name, int acountNumber) {
-        this.acountNumber = acountNumber;
+    public Account(String name, int accountNumber) {
+        this.accountNumber = accountNumber;
         this.name = name;
         this.value = 0;
     }
 
-    public Account(String name, int acountNumber, double value) {
-        this.acountNumber = acountNumber;
+    public Account(String name, int accountNumber, double value) {
+        this.accountNumber = accountNumber;
         this.name = name;
         this.value = value;
     }
@@ -29,7 +29,7 @@ public class Account {
     }
 
     public int getAcountNumber() {
-        return acountNumber;
+        return accountNumber;
     }
 
     public double getValue() {
@@ -37,8 +37,13 @@ public class Account {
     }
 
     public double withdrawal(double amount) {
-        value -= (amount + 5);
-        System.out.println("Updated account data: ");
+        double retire = amount + 5;
+        if (retire > value) {
+            System.out.println("Insufficient funds for this withdrawal.");
+        } else {
+            value -= (amount + 5);
+            System.out.println("Updated account data: ");
+        }
         return value;
     }
 
@@ -51,6 +56,6 @@ public class Account {
     @Override
     public String toString() {
         return String.format(
-                "Account %s, Holder: %s, Balance: $%.2f", acountNumber, name, value);
+                "Account %s, Holder: %s, Balance: $%.2f", accountNumber, name, value);
     }
 }
