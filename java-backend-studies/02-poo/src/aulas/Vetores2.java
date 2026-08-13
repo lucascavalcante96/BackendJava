@@ -14,7 +14,7 @@ public class Vetores2 {
         int n = sc.nextInt();
 
         Product2[] vect = new Product2[n];
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < vect.length; i++) {
             sc.nextLine();
             System.out.println("Nome do produto: ");
             String nome = sc.nextLine();
@@ -25,11 +25,11 @@ public class Vetores2 {
         }
 
         double soma = 0.0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < vect.length; i++) {
             soma += vect[i].getPreco();
         }
 
-        double media = soma / n;
+        double media = soma / vect.length;
         System.out.printf("MEDIA = %.2f", media);
         sc.close();
     }
