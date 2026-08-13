@@ -35,9 +35,15 @@ public class Client {
 
         System.out.print("Enter a deposit value: ");
         double depositValue = sc.nextDouble();
+
         account.deposit(depositValue);
         System.out.println(account);
 
+        System.out.print("Enter a withdrawal value: ");
+        double withdrawalValue = sc.nextDouble();
+
+        account.withdrawal(withdrawalValue);
+        System.out.println(account);
         sc.close();
     }
 

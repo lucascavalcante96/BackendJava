@@ -7,11 +7,13 @@ public class Account {
 
     public Account() {
     }
+
     public Account(String name, int acountNumber) {
         this.acountNumber = acountNumber;
         this.name = name;
         this.value = 0;
     }
+
     public Account(String name, int acountNumber, double value) {
         this.acountNumber = acountNumber;
         this.name = name;
@@ -25,6 +27,7 @@ public class Account {
     public void setName(String name) {
         this.name = name;
     }
+
     public int getAcountNumber() {
         return acountNumber;
     }
@@ -35,18 +38,19 @@ public class Account {
 
     public double withdrawal(double amount) {
         value -= (amount + 5);
+        System.out.println("Updated account data: ");
         return value;
     }
 
     public double deposit(double amount) {
         value += amount;
+        System.out.println("Updated account data: ");
         return value;
     }
 
+    @Override
     public String toString() {
-        return "Account data:\n"
-                + "Account "+ acountNumber + ", "
-                + "Holder: " + name + ", "
-                + "Balance: $ " + value;
+        return String.format(
+                "Account %s, Holder: %s, Balance: $%.2f", acountNumber, name, value);
     }
 }
