@@ -43,6 +43,9 @@ public class Listas {
             System.out.println(str);
         }
 
+        //buscando o primeiro elemento que começa com G, caso contrario ele me retorna null
+        String nome = list.stream().filter(x -> x.charAt(0) == 'G').findFirst().orElse(null);
+        System.out.println(nome);
     }
 
 }
