@@ -7,5 +7,9 @@ public class Boxing {
         Object obj = x;
         System.out.println(obj);
 
+        //fazendo umboxing
+
+        int y = (int) obj; // por não ser tipo compativeis é necessario fazer o casting
+        System.out.println(y);
     }
 }
