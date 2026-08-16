@@ -11,5 +11,15 @@ public class Boxing {
 
         int y = (int) obj; // por não ser tipo compativeis é necessario fazer o casting
         System.out.println(y);
+
+        //wraper classes -> tem como objetivo tratar os tipos primitivos como classes
+        //EX:
+
+        Integer b = x;
+        System.out.println(b);
+
+        int c = b + 5;
+        System.out.println(c);
+
     }
 }
