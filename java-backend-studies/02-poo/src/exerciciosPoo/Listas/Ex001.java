@@ -2,10 +2,8 @@ package exerciciosPoo.Listas;
 
 import exerciciosPoo.Listas.Entities.Funcionario;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Ex001 {
     static void main() {
@@ -31,13 +29,21 @@ public class Ex001 {
 
         System.out.print("Qual funcionario deseja aumentar o salario digite o ID: ");
         int idFuncionario = sc.nextInt();
-        sc.nextLine();
-        System.out.print("Digite quantos porcento deseja aumentar o salario: ");
-        double porcentagem = sc.nextDouble();
 
 
+        Funcionario funcionario = funcionarios.stream().filter(f -> f.getId() == idFuncionario).findFirst().orElse(null);
+        if (funcionario == null) {
+            System.out.println("Funcionario inexistente!");
+        } else {
+            System.out.print("Digite quantos porcento deseja aumentar o salario: ");
+            int porcentagem = sc.nextInt();
+            funcionario.aumentoSalario(porcentagem);
+        }
 
-        System.out.println(funcionarios);
+        for (Funcionario f : funcionarios) {
+            System.out.println(f);
+        }
+
         sc.close();
     }
 }

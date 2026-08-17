@@ -28,15 +28,11 @@ public class Funcionario {
     }
 
     public double aumentoSalario(double porcentagem){
-        return salario + (salario * (porcentagem / 100));
+        return salario += (salario * (porcentagem / 100));
     }
 
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "nome='" + nome + '\'' +
-                ", id=" + id +
-                ", salario=" + salario +
-                '}';
+        return id + ", Nome: " + nome + " Salario: " + String.format("%.2f",salario);
     }
 }
