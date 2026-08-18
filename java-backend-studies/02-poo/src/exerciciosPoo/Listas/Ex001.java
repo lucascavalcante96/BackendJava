@@ -18,6 +18,11 @@ public class Ex001 {
         for (int i = 0; i < qtdFuncionarios; i++) {
             System.out.print("Digite o id do funcionario: ");
             int id = sc.nextInt();
+
+            while(idRepetido(funcionarios, id)){
+                System.out.println("ID existente digite novamente: ");
+                id = sc.nextInt();
+            }
             sc.nextLine();
             System.out.print("Digite o nome: ");
             String nome = sc.nextLine();
@@ -45,5 +50,9 @@ public class Ex001 {
         }
 
         sc.close();
+    }
+    public static boolean idRepetido(List<Funcionario> funcionarios, int id) {
+        Funcionario funcionario = funcionarios.stream().filter(f -> f.getId() == id).findFirst().orElse(null);
+        return funcionario != null;
     }
 }
