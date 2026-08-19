@@ -31,8 +31,8 @@ public class ex002 {
 
         media /= temperatura.size();
         System.out.println();
-        System.out.printf("A temperatura média Anual foi de: %.1f %n", media);
-        System.out.println("Os meses em que a temperatura foi acima da média foram: ");
+        System.out.printf("A temperatura média anual foi de: %.1f %n", media);
+        System.out.println("Os meses em que a temperatura ficou acima da média foram: ");
         for (int i = 0; i < temperatura.size(); i++){
             if(temperatura.get(i) > media){
                 System.out.printf("%s - com %.1f° %n",meses.get(i), temperatura.get(i));
