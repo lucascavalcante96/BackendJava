@@ -15,7 +15,8 @@ public class ex002 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        List<String> meses = new ArrayList<>(List.of("Janeiro", "Fevereiro", "Março", "Abril", "Maio",
+        List<String> meses = new ArrayList<>(List.of(
+                "Janeiro", "Fevereiro", "Março", "Abril", "Maio",
                 "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"));
 
         List<Double> temperatura = new ArrayList<>();
