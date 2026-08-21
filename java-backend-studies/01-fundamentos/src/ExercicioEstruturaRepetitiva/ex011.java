@@ -12,9 +12,9 @@ public class ex011 {
         System.out.print("Digite um número inteiro: ");
         int numero = sc.nextInt();
 
-        for (int i = 1; i <= numero; i++) {
-            if (i % 2 == 1){
-                System.out.println(i);
+        for (int j = 1; j <= numero; j++) {
+            if (j % 2 == 1){
+                System.out.println(j);
             }
         }
         sc.close();
