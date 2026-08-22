@@ -61,7 +61,7 @@ public class ex003 {
         System.out.print(pergunta);
         char resposta = sc.next().charAt(0);
         while (Character.toLowerCase(resposta) != 's' && Character.toLowerCase(resposta) != 'n'){
-            System.out.println("Digite S ou N");
+            System.out.print("Digite S ou N");
             resposta = sc.next().charAt(0);
         }
         return resposta;
