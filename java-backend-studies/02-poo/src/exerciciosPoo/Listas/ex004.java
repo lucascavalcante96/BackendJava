@@ -34,7 +34,6 @@ public class ex004 {
                 lista.add(numero);
             }
         }
-
         //Quantidade de números que foram lidos
         System.out.println("Foram adicionados " + lista.size() + " números");
 
