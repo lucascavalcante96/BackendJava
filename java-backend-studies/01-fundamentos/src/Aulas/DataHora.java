@@ -1,5 +1,6 @@
 package Aulas;
 
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -10,5 +11,7 @@ public class DataHora {
 
         LocalDateTime d02 = LocalDateTime.now();
         System.out.println("Data e Hora: " + d02);
+        Instant instant = Instant.now();
+        System.out.println("Data de instante: " + instant);
     }
 }
