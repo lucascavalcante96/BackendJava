@@ -3,8 +3,8 @@ package Entities;
 import Entities.enums.WorkerLevel;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
+import java.util.Objects;
 
 public class Worker {
     private String name;
@@ -16,7 +16,6 @@ public class Worker {
     private List<HourContract> contracts = new ArrayList<>();
 
     public Worker() {
-
     }
 
     public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
@@ -63,7 +62,9 @@ public class Worker {
     }
 
     public void addContract(HourContract contract) {
-        contracts.add(contract);
+        if (contract != null) {
+            contracts.add(contract);
+        }
     }
 
     public void removeContract(HourContract contract) {
@@ -71,19 +72,20 @@ public class Worker {
     }
 
     public double income(int year, int month) {
-        double sum = baseSalary;
-        Calendar cal = Calendar.getInstance();
+        // Evita NPE se baseSalary não tiver sido setado
+        double sum = (baseSalary != null) ? baseSalary : 0.0;
 
         for (HourContract contract : contracts) {
-            cal.setTime(contract.getDate());
-            int c_year = cal.get(Calendar.YEAR);
-            int c_month = cal.get(Calendar.MONTH) + 1;
+            if (contract.getDate() == null) {
+                continue; // ignora contratos sem data
+            }
+            int c_year = contract.getDate().getYear();
+            int c_month = contract.getDate().getMonthValue(); // já é 1-12, sem precisar +1
+
             if (year == c_year && month == c_month) {
                 sum += contract.totalValue();
             }
         }
         return sum;
     }
-
-
 }

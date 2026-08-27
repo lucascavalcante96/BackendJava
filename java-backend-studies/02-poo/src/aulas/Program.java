@@ -1,19 +1,24 @@
 package aulas;
 
 import Entities.Department;
+import Entities.HourContract;
 import Entities.Worker;
 import Entities.enums.WorkerLevel;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Program {
 
-    static void main() {
+    public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
+        DateTimeFormatter sdf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        System.out.print("Enter departmen's name: ");
+        System.out.print("Enter department's name: ");
         String departmentName = sc.nextLine();
 
         System.out.println("Enter worker data: ");
@@ -27,6 +32,32 @@ public class Program {
         double baseSalary = sc.nextDouble();
 
         Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Department(departmentName));
+
+        System.out.print("How many contracts to this worker? ");
+
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            System.out.printf("Enter contract #%d data: %n", i + 1);
+            System.out.println("Date (DD/MM/YYYY): ");
+            LocalDate contractDate = LocalDate.parse(sc.next(), sdf);
+            System.out.print("Value per hour: ");
+            double valuePerHour = sc.nextDouble();
+            System.out.print("Duration (hours): ");
+            int hours = sc.nextInt();
+
+            HourContract contract = new HourContract(contractDate, valuePerHour, hours);
+            worker.addContract(contract);
+        }
+        System.out.println();
+        System.out.print("Enter month and year to calculate income (MM/YYYY): ");
+        String monthAndYear = sc.next();
+
+        int month = Integer.parseInt(monthAndYear.substring(0,2));
+        int year = Integer.parseInt(monthAndYear.substring(3));
+        System.out.println("Name: " + worker.getName());
+        System.out.println("Department: " + worker.getDepartment().getName());
+        System.out.println("Income for " +  monthAndYear + ": " + String.format("%,.2f",worker.income(year, month)));
         sc.close();
     }
 }
