@@ -62,4 +62,13 @@ public class Worker {
         contracts.remove(contract);
     }
 
+    public double income(int year, int month) {
+        double sum = baseSalary;
+
+        for (HourContract contract : contracts) {
+            if (contract ==)
+        }
+    }
+
+
 }
