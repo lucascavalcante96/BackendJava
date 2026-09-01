@@ -34,5 +34,9 @@ public class heranca {
             acc5.updateBalance();
             System.out.println("Balance Updated");
         }
+
+        Account conta = new BusinessAccount(1005, "Joao", 1000.0, 500.0);
+        conta.withdraw(200.0);
+        System.out.println(conta.getBalance());
     }
 }
