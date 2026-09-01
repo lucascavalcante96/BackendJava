@@ -22,26 +22,18 @@ public class Main {
             System.out.print("Outsourced (y/n)? ");
             char ch = sc.next().charAt(0);
             sc.nextLine();
+            System.out.print("Name: ");
+            String name = sc.nextLine();
+            System.out.print("Hours: ");
+            int hours = sc.nextInt();
+            System.out.print("Value per hour: ");
+            double valuePerHour = sc.nextDouble();
             if (Character.toLowerCase(ch) == 'y') {
-                System.out.print("Name: ");
-                String name = sc.nextLine();
-                System.out.print("Hours: ");
-                int hours = sc.nextInt();
-                System.out.print("Value per hour: ");
-                double valuePerHour = sc.nextDouble();
                 System.out.print("Additional charge: ");
                 double additionalCharge = sc.nextDouble();
-
-                OutsourcedEmployee oue = new OutsourcedEmployee(name,hours,valuePerHour,additionalCharge);
+                Employee oue = new OutsourcedEmployee(name,hours,valuePerHour,additionalCharge);
                 employees.add(oue);
             } else {
-                System.out.print("Name: ");
-                String name = sc.nextLine();
-                System.out.print("Hours: ");
-                int hours = sc.nextInt();
-                System.out.print("Value per hour: ");
-                double valuePerHour = sc.nextDouble();
-
                 Employee e = new Employee(name,hours,valuePerHour);
                 employees.add(e);
             }
