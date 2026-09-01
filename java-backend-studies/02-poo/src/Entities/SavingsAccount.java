@@ -1,6 +1,6 @@
 package Entities;
 
-public class SavingsAccount extends Account {
+public final class SavingsAccount extends Account {
     private Double interestRate;
 
     public SavingsAccount() {
@@ -25,7 +25,7 @@ public class SavingsAccount extends Account {
     }
 
     @Override
-    public void withdraw(Double amount) {
+    public final void withdraw(Double amount) {
         balance -= amount;
     }
 
