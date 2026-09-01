@@ -2,13 +2,24 @@ package aulas;
 
 
 
+import Entities.Account;
 import Entities.BusinessAccount;
+import Entities.SavingsAccount;
 
 public class heranca {
     static void main() {
-        BusinessAccount account = new BusinessAccount();
+
+    Account acc = new Account(1001, "Alex", 0.0);
+
+    BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
+
+    // UPCASTING
+
+        Account acc1 = bacc;
+
+        Account acc2 = new BusinessAccount(1003, "Joao", 0.0, 200.0);
+        Account acc3 = new SavingsAccount(1004, "Ana", 0.0, 0.01);
+
 
     }
-
-
 }
