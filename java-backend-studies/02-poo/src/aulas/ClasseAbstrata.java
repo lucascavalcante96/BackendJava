@@ -1,15 +1,15 @@
 package aulas;
 
-public abstract class ClassesAbstratas {
+public abstract class ClasseAbstrata {
 
         private Integer number;
         private String holder;
         protected Double balance;
 
-        public ClassesAbstratas() {
+        public ClasseAbstrata() {
         }
 
-        public ClassesAbstratas(Integer number, String holder, Double balance) {
+        public ClasseAbstrata(Integer number, String holder, Double balance) {
             this.number = number;
             this.holder = holder;
             this.balance = balance;
