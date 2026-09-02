@@ -1,6 +1,6 @@
 package exerciciosPoo.Exercicio.OrderAndItemSystem.Entities;
 
-public class Order extends Item {
+public class Order {
     private int id;
     private Item item;
 
@@ -30,7 +30,7 @@ public class Order extends Item {
 
     public double calcularTotal(){
         double sum = 0.0;
-        sum += subtotal();
+        sum += item.subtotal();
         return sum;
     }
 
