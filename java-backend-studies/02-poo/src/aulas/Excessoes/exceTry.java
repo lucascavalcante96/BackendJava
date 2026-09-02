@@ -16,6 +16,7 @@ public class exceTry {
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Invalid position");
+            e.printStackTrace(); // imprime em pilha de chamada o erro e onde que ele foi chamado ou quais metodos foram chamados até chegar no erro
         }
         catch (InputMismatchException e) {
             System.out.println("Input error");
