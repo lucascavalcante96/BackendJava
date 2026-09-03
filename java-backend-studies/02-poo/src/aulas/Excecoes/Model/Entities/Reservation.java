@@ -1,6 +1,6 @@
-package aulas.Excessoes.Model.Entities;
+package aulas.Excecoes.Model.Entities;
 
-import aulas.Excessoes.Model.exceptions.DomainException;
+import aulas.Excecoes.Model.exceptions.DomainException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package aulas.Excessoes;
+package aulas.Excecoes;
 
 import java.io.File;
 import java.io.FileNotFoundException;

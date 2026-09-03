@@ -1,4 +1,4 @@
-package aulas.Excessoes.Model.exceptions;
+package aulas.Excecoes.Model.exceptions;
 
 public class DomainException extends RuntimeException {
     private static final long serialVersionUID = 1L;

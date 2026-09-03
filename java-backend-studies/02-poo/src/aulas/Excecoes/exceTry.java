@@ -1,4 +1,4 @@
-package aulas.Excessoes;
+package aulas.Excecoes;
 
 
 import java.util.InputMismatchException;

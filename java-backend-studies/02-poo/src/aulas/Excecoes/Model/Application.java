@@ -1,7 +1,7 @@
-package aulas.Excessoes.Model;
+package aulas.Excecoes.Model;
 
-import aulas.Excessoes.Model.Entities.Reservation;
-import aulas.Excessoes.Model.exceptions.DomainException;
+import aulas.Excecoes.Model.Entities.Reservation;
+import aulas.Excecoes.Model.exceptions.DomainException;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
