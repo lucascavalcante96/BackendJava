@@ -11,7 +11,7 @@ public class FileWriterBufferedWrite {
 
         String path = "D:\\aprendendoEscreverComJava.txt";
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) { //Ao passar o parametro true ele n reescreve sobre o arquivo
             for (String line : lines) {
                 bw.write(line);
                 bw.newLine();
