@@ -15,12 +15,12 @@ Abaixo está o planejamento da trilha que estou percorrendo:
     - Estruturas de Condição (`if/else`, `switch`)
     - Estruturas de Repetição (`for`, `while`, `do-while`)
     - Arrays e Matrizes
-- [ ] **Módulo 2: Programação Orientada a Objetos (POO)**
+- [x] **Módulo 2: Programação Orientada a Objetos (POO)**
     - Classes, Atributos e Métodos
     - Pilares da POO (Encapsulamento, Herança, Polimorfismo e Abstração)
     - Classes Abstratas e Interfaces
     - Tratamento de Exceções (`try-catch`)
-- [ ] **Módulo 3: Java Avançado e Collections Framework**
+- [x] **Módulo 3: Java Avançado e Collections Framework**
     - List, Set, Map (`ArrayList`, `HashSet`, `HashMap`)
     - Streams API e Expressões Lambda
     - Manipulação de Datas (`java.time`)
