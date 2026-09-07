@@ -1,4 +1,4 @@
-package aulas.Interface;
+package aulas.EstudosInterface;
 
 public class Vehicle {
     private String modelo;

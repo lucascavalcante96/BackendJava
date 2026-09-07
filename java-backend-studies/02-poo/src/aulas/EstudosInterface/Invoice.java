@@ -1,4 +1,4 @@
-package aulas.Interface;
+package aulas.EstudosInterface;
 
 public class Invoice {
     private Double basicPayment;

@@ -1,4 +1,4 @@
-package aulas.Interface;
+package aulas.EstudosInterface;
 
 public class BrazilTaxService {
     public double tax(double amount){

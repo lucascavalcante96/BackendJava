@@ -1,4 +1,4 @@
-package aulas.Interface;
+package aulas.EstudosInterface;
 
 import java.time.Duration;
 
