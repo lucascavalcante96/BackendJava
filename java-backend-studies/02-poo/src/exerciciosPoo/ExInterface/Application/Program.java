@@ -3,6 +3,7 @@ package exerciciosPoo.ExInterface.Application;
 import exerciciosPoo.ExInterface.Entities.Contract;
 import exerciciosPoo.ExInterface.Entities.Installment;
 import exerciciosPoo.ExInterface.Services.ContractService;
+import exerciciosPoo.ExInterface.Services.PaypalServive;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -29,7 +30,7 @@ public class Program {
         System.out.print("Entre com o número de parcelas: ");
         int parcelas = sc.nextInt();
 
-        ContractService contractService = new ContractService(null);
+        ContractService contractService = new ContractService(new PaypalServive());
         contractService.processContract(contract,parcelas);
 
         System.out.println("PARCELAS");
